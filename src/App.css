@@ -1,0 +1,47 @@
+body {
+	place-items: center;
+	text-align: center;
+	margin: 8rem;
+}
+
+img {
+	border-radius: 10px;
+	height: 300px;
+	margin: 2rem;
+}
+
+.options {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+button {
+	background-color: #a11321;
+	color: white;
+	font-size: 1rem;
+	font-family: inherit;
+	border: 2px solid transparent;
+	border-radius: 6px;
+	padding: 0.3rem 2rem;
+	cursor: pointer;
+	transition: border ease 200ms;
+}
+
+button:hover {
+	border: 2px solid white;
+}
+
+.no-btn {
+	position: relative;
+}
+
+.letter-title {
+	margin-top: 10rem;
+}
+
+.envelope {
+	fill: white;
+	height: 300px;
+	width: 300px;
+}
