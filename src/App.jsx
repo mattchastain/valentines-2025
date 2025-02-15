@@ -14,17 +14,25 @@ const getRandomNumber = (min, max) => {
 };
 
 function App() {
-	const [position, setPosition] = useState({ top: 0, left: 0 });
+	const [position, setPosition] = useState({
+		position: 'absolute',
+		top: 0,
+		left: 0,
+		transform: 'translate(0, 0)',
+	});
 	const handleSetPosition = () => {
 		setPosition({
-			top: `${getRandomNumber(-400, 50)}px`,
-			left: `${getRandomNumber(-150, 100)}px`,
+			position: 'absolute',
+			top: 0,
+			left: 0,
+			transform: `translate(${getRandomNumber(
+				5,
+				85
+			)}vw, ${getRandomNumber(5, 85)}vh)`,
 		});
 	};
 
-	const [image, setImage] = useState(
-		'./images/CorgiHoldingFlowers.jpg'
-	);
+	const [image, setImage] = useState('./images/CorgiHoldingFlowers.jpg');
 	const [moveBtn, setMoveBtn] = useState(false);
 	const handleYesClick = (e) => {
 		e.preventDefault;
@@ -49,7 +57,7 @@ function App() {
 
 	if (open) {
 		return (
-			<>
+			<div className='container'>
 				<h1>Happy Valentines Day!</h1>
 				<h3>Will you be my Valentine?</h3>
 				<img src={image} alt='' />
@@ -66,7 +74,7 @@ function App() {
 						No
 					</button>
 				</div>
-			</>
+			</div>
 		);
 	} else {
 		return (

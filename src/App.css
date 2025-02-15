@@ -15,7 +15,8 @@ img {
 .options {
 	display: flex;
 	gap: 1rem;
-	justify-content: center;
+	justify-content: space-between;
+	padding: 0 50px;
 }
 
 button {
@@ -33,10 +34,6 @@ button {
 /* button:hover {
 	border: 2px solid white;
 } */
-
-.no-btn {
-	position: relative;
-}
 
 /* .letter-title {
 	margin-top: 12rem;
