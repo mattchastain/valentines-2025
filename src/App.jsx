@@ -23,17 +23,17 @@ function App() {
 	};
 
 	const [image, setImage] = useState(
-		'../public/images/CorgiHoldingFlowers.jpg'
+		'./images/CorgiHoldingFlowers.jpg'
 	);
 	const [moveBtn, setMoveBtn] = useState(false);
 	const handleYesClick = (e) => {
 		e.preventDefault;
-		setImage('../public/images/HappyCorgi.jpg');
+		setImage('./images/HappyCorgi.jpg');
 		yay.play();
 	};
 	const handleNoClick = (e) => {
 		e.preventDefault;
-		setImage('../public/images/MadCorgi.jpg');
+		setImage('./images/MadCorgi.jpg');
 		setMoveBtn(true);
 		music.pause();
 		dun.play();
