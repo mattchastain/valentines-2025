@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import './App.css';
 
-const music = new Audio('./src/audio/music.mp3');
-const yay = new Audio('./src/audio/yay.mp3');
-const dun = new Audio('./src/audio/dun.mp3');
+const music = new Audio('../public/audio/music.mp3');
+const yay = new Audio('../public/audio/yay.mp3');
+const dun = new Audio('../public/audio/dun.mp3');
 
 music.playbackRate = 0.8;
 
@@ -23,17 +23,17 @@ function App() {
 	};
 
 	const [image, setImage] = useState(
-		'./src/images/CorgiHoldingFlowers.jpg'
+		'../public/images/CorgiHoldingFlowers.jpg'
 	);
 	const [moveBtn, setMoveBtn] = useState(false);
 	const handleYesClick = (e) => {
 		e.preventDefault;
-		setImage('./src/images/HappyCorgi.jpg');
+		setImage('../public/images/HappyCorgi.jpg');
 		yay.play();
 	};
 	const handleNoClick = (e) => {
 		e.preventDefault;
-		setImage('./src/images/MadCorgi.jpg');
+		setImage('../public/images/MadCorgi.jpg');
 		setMoveBtn(true);
 		music.pause();
 		dun.play();
