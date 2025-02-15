@@ -17,23 +17,23 @@ function App() {
 	const [position, setPosition] = useState({ top: 0, left: 0 });
 	const handleSetPosition = () => {
 		setPosition({
-			top: `${getRandomNumber(-500, 50)}px`,
-			left: `${getRandomNumber(-500, 400)}px`,
+			top: `${getRandomNumber(-200, 50)}px`,
+			left: `${getRandomNumber(-200, 150)}px`,
 		});
 	};
 
 	const [image, setImage] = useState(
-		'./images/CorgiHoldingFlowers.jpg'
+		'../public/images/CorgiHoldingFlowers.jpg'
 	);
 	const [moveBtn, setMoveBtn] = useState(false);
 	const handleYesClick = (e) => {
 		e.preventDefault;
-		setImage('./images/HappyCorgi.jpg');
+		setImage('../public/images/HappyCorgi.jpg');
 		yay.play();
 	};
 	const handleNoClick = (e) => {
 		e.preventDefault;
-		setImage('./images/MadCorgi.jpg');
+		setImage('../public/images/MadCorgi.jpg');
 		setMoveBtn(true);
 		music.pause();
 		dun.play();
