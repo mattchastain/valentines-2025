@@ -2,7 +2,7 @@
 	"name": "valentines-2025",
 	"private": true,
 	"version": "0.0.0",
-	"homepage": "https://mattchastain.github.io/valentines-2025",
+	"homepage": "https://mattchastain.github.io/valentines-2025/",
 	"type": "module",
 	"scripts": {
 		"dev": "vite",
