@@ -23,17 +23,17 @@ function App() {
 	};
 
 	const [image, setImage] = useState(
-		'mattchastain/assets/CorgiHoldingFlowers.jpg'
+		'mattchastain/images/CorgiHoldingFlowers.jpg'
 	);
 	const [moveBtn, setMoveBtn] = useState(false);
 	const handleYesClick = (e) => {
 		e.preventDefault;
-		setImage('mattchastain/assets/HappyCorgi.jpg');
+		setImage('mattchastain/images/HappyCorgi.jpg');
 		yay.play();
 	};
 	const handleNoClick = (e) => {
 		e.preventDefault;
-		setImage('mattchastain/assets/MadCorgi.jpg');
+		setImage('mattchastain/images/MadCorgi.jpg');
 		setMoveBtn(true);
 		music.pause();
 		dun.play();
