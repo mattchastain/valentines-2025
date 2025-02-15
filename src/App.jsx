@@ -17,8 +17,8 @@ function App() {
 	const [position, setPosition] = useState({ top: 0, left: 0 });
 	const handleSetPosition = () => {
 		setPosition({
-			top: `${getRandomNumber(-200, 50)}px`,
-			left: `${getRandomNumber(-200, 150)}px`,
+			top: `${getRandomNumber(-400, 50)}px`,
+			left: `${getRandomNumber(-150, 100)}px`,
 		});
 	};
 
@@ -35,6 +35,7 @@ function App() {
 		e.preventDefault;
 		setImage('./images/MadCorgi.jpg');
 		setMoveBtn(true);
+		handleSetPosition();
 		music.pause();
 		dun.play();
 	};
@@ -59,7 +60,7 @@ function App() {
 					<button
 						className='no-btn'
 						onClick={handleNoClick}
-						onMouseEnter={handleSetPosition}
+						// onMouseEnter={handleSetPosition}
 						style={moveBtn ? position : { top: 0, left: 0 }}
 					>
 						No
