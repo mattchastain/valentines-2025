@@ -31,9 +31,9 @@ button {
 	transition: border ease 200ms;
 }
 
-/* button:hover {
+button:hover {
 	border: 2px solid white;
-} */
+}
 
 /* .letter-title {
 	margin-top: 12rem;
