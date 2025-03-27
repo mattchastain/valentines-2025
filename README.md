@@ -1,4 +1,3 @@
 # Valentines 2025
 
-A will you be my Valentine card.
-You wouldn't say no, would you? 😡
+A letter you can send to someone who you want to make your valentine.
